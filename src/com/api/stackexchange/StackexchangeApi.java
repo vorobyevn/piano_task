@@ -79,7 +79,7 @@ public class StackexchangeApi extends HttpServlet {
 		return questionList;
 	}
 
-	private int GetPageNum(String page) {
+	public int GetPageNum(String page) {
 		int pageNum = 1;
 		if (page != null && page.trim() != "") {
 			try {
